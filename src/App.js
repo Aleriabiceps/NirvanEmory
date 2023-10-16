@@ -43,11 +43,18 @@ const Header = () => (
 );
 
 
-const SignupButton = () => (
-  <div className="signup-button">
-    <button>Sign Up</button>
-  </div>
-);
+const SignupButton = () => {
+  const openForm = () => {
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSenzV4-2pS6pxl4mxjCg5zD6Y59atsJbbvXa6C-5k06wugajA/viewform");
+  };
+
+  return (
+    <div className="signup-button">
+      <button onClick={openForm}>Sign Up</button>
+    </div>
+  );
+};
+
 
 const RulesSection = () => (
   <section className="info-section">
