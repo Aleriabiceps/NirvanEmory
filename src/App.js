@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css'; // Import the stylesheet
 import { Helmet } from 'react-helmet';
 
+
 const Navbar = () => (
   <nav className="navbar">
     <div>
@@ -16,6 +17,7 @@ const Navbar = () => (
 <link
   href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
   rel="stylesheet"
+  
 />
 </Helmet>
 
@@ -30,9 +32,9 @@ const IconText = ({ src, alt, text }) => (
 
 const Container = () => (
   <section className="container">
-    <IconText src="https://emoryspoonassassin.com/spoon.png" alt="Spoon Icon" text="Get your spoon and an assigned target for the week" />
-    <IconText src="https://emoryspoonassassin.com/shield.png" alt="Shield Icon" text="Keep Assassinating Targets Till You’re the Last Team Standing" />
-    <IconText src="https://emoryspoonassassin.com/bullseye.png" alt="Target Icon" text="Participate in weekly challenges to win cash prizes or the grand prize of $2,000" />
+    <IconText src="https://imageupload.io/ib/4rVGN3VkNTLB8u8_1697487492.png" alt="Spoon Icon" text="Get your spoon and an assigned target for the week" />
+    <IconText src="https://imageupload.io/ib/k4VBP9blMLM92of_1697487580.png" alt="Shield Icon" text="Keep Assassinating Targets Till You’re the Last Team Standing" />
+    <IconText src="https://imageupload.io/ib/e3pH2BGGZg5o01Q_1697487658.png" alt="Target Icon" text="Participate in weekly challenges to win cash prizes or the grand prize of $2,000" />
   </section>
 );
 const Header = () => (
@@ -49,9 +51,10 @@ const SignupButton = () => {
   };
 
   return (
-    <div className="signup-button">
-      <button onClick={openForm}>Sign Up</button>
-    </div>
+   <div className="signup-button">
+  <button onClick={openForm}>Sign Up Now</button>
+  <p>453/500 Spots Remain!</p>
+</div>
   );
 };
 
@@ -100,6 +103,10 @@ const PrizeSection = () => (
 
 const EmorySpoonAssassinApp = () => (
   <div>
+     <Helmet>
+      <link rel="icon" href="https://i.ibb.co/cc4jf0S/pfp.jpg" />
+      <title>Emory Spoon Assassin</title>
+    </Helmet>
     <Navbar />
     <Header />
     <Container />
